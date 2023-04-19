@@ -9,7 +9,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - /appl/docker_rev_proxy/nginx:/etc/nginx
-      - /appl/docker_rev_proxy/ssl:/ssl/
-      - /appl/docker_rev_proxy/logs:/var/log/nginx
+      - /appl/docker_reverse_proxy/nginx:/etc/nginx
+      - /appl/docker_reverse_proxy/ssl:/ssl/
+      - /appl/docker_reverse_proxy/logs:/var/log/nginx
 ### EOF
