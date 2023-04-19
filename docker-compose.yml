@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: ReverseProxy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /appl/docker_rev_proxy/nginx:/etc/nginx
+      - /appl/docker_rev_proxy/ssl:/ssl/
+      - /appl/docker_rev_proxy/logs:/var/log/nginx
+### EOF
